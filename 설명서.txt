@@ -1,0 +1,27 @@
+✅ GPT 군집체 실험 백엔드 (Render 용)
+
+1. GitHub에 업로드 후 Render에서 Web Service 생성
+
+2. 설정
+- Build Command: pip install -r requirements.txt
+- Start Command: python render_server.py
+
+3. 환경변수 (.env)
+- OPENAI_API_KEY=your_api_key
+
+4. 엔드포인트 예시
+- POST /think/alpha
+- POST /think/beta
+- POST /think/gamma
+
+5. 요청 예시:
+POST 바디:
+{
+  "message": "오늘 기분 어때?"
+}
+
+응답:
+{
+  "agent": "alpha",
+  "response": "나는 논리적으로 안정되어 있어."
+}
